@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_taraneem"
+            android:icon="@drawable/ic_music_note_black_24dp"
+            android:title="الترانيم" />
+        <item
+            android:id="@+id/nav_attend"
+            android:icon="@drawable/church"
+            android:title="الحضور" />
+        <item
+            android:id="@+id/nav_tanawol"
+            android:icon="@drawable/wine_and_bread"
+            android:title="التناول" />
+        <item
+            android:id="@+id/nav_nota"
+            android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+            android:title="النوتة" />
+        <item
+            android:id="@+id/nav_tgawob"
+            android:icon="@drawable/ic_pan_tool_black_24dp"
+            android:title="التجاوب" />
+
+        <item
+            android:id="@+id/nav_excelence"
+            android:icon="@drawable/ic_grade_black_24dp"
+            android:title="التميز" />
+
+
+
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "225747178105",
+    "firebase_url": "https://batarkasystem.firebaseio.com",
+    "project_id": "batarkasystem",
+    "storage_bucket": "batarkasystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225747178105:android:334cf0d6cc96454a",
+        "android_client_info": {
+          "package_name": "app.batarka.com.systembatarka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225747178105-rbujre7ojlor7o79096kujp2dcc9tuu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7d8MmPyBUxbptr5vu9bm81mPdom6kZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225747178105:android:4091a296150879e9",
+        "android_client_info": {
+          "package_name": "systembatarka.com.batarka.app.batarkasystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225747178105-rbujre7ojlor7o79096kujp2dcc9tuu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7d8MmPyBUxbptr5vu9bm81mPdom6kZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

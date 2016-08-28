@@ -365,9 +365,9 @@ try {
             switch (position) {
                 case 0:
 
-                    return "الغياب";
+                    return "Abscence";
                 case 1:
-                    return "كشف الفصل";
+                    return "Class";
             }
             return null;
         }

@@ -9,7 +9,7 @@
         <item
             android:id="@+id/nav_attend"
             android:icon="@drawable/church"
-            android:title="الحضور" />
+            android:title="attendance" />
         <item
             android:id="@+id/nav_tanawol"
             android:icon="@drawable/wine_and_bread"

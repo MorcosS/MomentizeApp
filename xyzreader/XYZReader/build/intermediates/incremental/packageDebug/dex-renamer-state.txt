@@ -1,0 +1,7 @@
+#Sat Mar 25 19:22:37 EET 2017
+base.0=/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_318d1ca877e3ac480e66ab59044b0f0aa287a770
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b564fb402e532424c203c4bedc6f2016a3475849/classes.dex
+base.1=/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b564fb402e532424c203c4bedc6f2016a3475849
+file.0=/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_318d1ca877e3ac480e66ab59044b0f0aa287a770/classes.dex

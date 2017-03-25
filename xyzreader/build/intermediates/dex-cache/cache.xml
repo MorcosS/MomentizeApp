@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.1.2/7052283359001bb108753cb0583a887d3bf94c82/okhttp-3.1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7052283359001bb108753cb0583a887d3bf94c82">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.1.2_4bd5c70580dd27595daf8b257c8b2d171a0592ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/libs/volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c68094cbd011a3f9dccbfe16e77a2cf43622e277">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/2/volley_7d5560f7e3c64177d1c32da49444ad5319c357e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/5ac5039f4103bbd7dac39c06d878724124432dbb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f1f8f082f3829c943c30a47446203c08fa0f4825/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1bc40f546ffaac02ef71a31724b92da2adf312ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_76dce66c3a2db03bb6e4c1ca269897ec078e7282/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aca6947b31294426de625b43638789d5a8b449ba">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b564fb402e532424c203c4bedc6f2016a3475849/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/ebf6ee76db9867e483198f88582f6d2fc6267fa2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dd3d1621d142ead757e2de2aed7ec96f7e315a2b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/48e0cd219a9a0bf8741543087f073895e04d5f03/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42cbf4675a3233792fb0856a67bd8072323ca87f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/70147c19a418888523816b4944401e4bb7531842/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5c7217a7a61ed189f63bb701734c3af7d5e1896b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/3ae768197fa8e5c8ac6e12a774c1ce8641b2c736/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a8feb0148755642952535a2bb521845bf1fc223a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/101984b3db45ddef291e3d08e255ba67f6e0236a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f71e0238167dbcd240f921669a6b1760bb481bd4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/c908a03c12b02c9130123280ca9151b6deb1c8b4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a4e893b8b97168e6bec96d08a0ac951ccfb91b6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_318d1ca877e3ac480e66ab59044b0f0aa287a770/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/64cf78b0d7f972a252c9117c8c94f95aa137754d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec3360994c4007c282a4b651723603e82682b601">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_069cf5138fc94731eb86e1fa6e170afa81d4e603/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/ecd11bf31724e0ce003978e7ad38711871cb1eea/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_72b0f1ef11688c25adcf8804a56abe1e3062f530/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/d2be097cdc82dd73f21693a3b5eff83081b1cdd7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9a4986d696d1b342c2736fc64fafcbd7f8d6744e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/e2b03117fff24a3fd9844130dda0454d3970f9fd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e8f9995a1fdab0e0a1178ef768decd1a1165482f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/0118e07ce4b2619a50ec54a30d0fea6e5319a6ff/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09adf6e61abc0fe3b2cb5b1795a7033572475fad">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_78021d355b6e706072d99b8d627da9d4d85e707a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/android-sdks/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.0_d747e49b212b23bb737dcb547aff8f05d5dbd762/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_624d7438430f7be9e0a59c5355bd1dfee954e1e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MorcosS/.android/build-cache/28f9d0ef4d486a1e0e6f271a55efbd0d32e4517d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff7f13694f4f0be7c959f3edb64e6d5997c377e1/classes.dex" />
+    </item>
+
+</items>

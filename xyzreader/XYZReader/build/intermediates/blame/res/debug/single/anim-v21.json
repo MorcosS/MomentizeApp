@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/anim-v21/fab_state_list_anim.xml",
+        "source": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/anim-v21/fab_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]

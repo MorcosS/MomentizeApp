@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/layout-v21/notification_action.xml"
+    }
+]

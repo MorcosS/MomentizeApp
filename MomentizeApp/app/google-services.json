@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "916945032230",
+    "firebase_url": "https://momentize-cb9ef.firebaseio.com",
+    "project_id": "momentize-cb9ef",
+    "storage_bucket": "momentize-cb9ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916945032230:android:88df8abb4fdac47f",
+        "android_client_info": {
+          "package_name": "com.dcc.momentizeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916945032230-2ti5mk0q233s40dcm10h8ieu7rtel1rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dcc.momentizeapp",
+            "certificate_hash": "0740f2a818912335c2de588527180c6ec909f2d0"
+          }
+        },
+        {
+          "client_id": "916945032230-virmcfjpoapn4kictsi0fu776q438pnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUU7oXmUyU8UWYjBaqSXvG1qYuTPLLmdg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916945032230-virmcfjpoapn4kictsi0fu776q438pnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

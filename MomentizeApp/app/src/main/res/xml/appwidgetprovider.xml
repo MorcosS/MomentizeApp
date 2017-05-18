@@ -1,0 +1,9 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="110dp"
+    android:minHeight="170dp"
+    android:updatePeriodMillis="18000"
+    android:initialLayout="@layout/memory_widget_list"
+    android:previewImage="@mipmap/ic_launcher_round"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen">
+</appwidget-provider>

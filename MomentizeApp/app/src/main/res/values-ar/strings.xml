@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">فكرني</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">البريد الالكتروني</string>
+    <string name="prompt_password">كلمة المرور</string>
+    <string name="action_sign_in">التسجيل</string>
+    <string name="action_sign_in_short">تسجيل الدخول</string>
+    <string name="error_invalid_email">البريد الالكتروني غير صحيح</string>
+    <string name="error_invalid_password">كلمة المرور يجب ان تزيد عن ٦ أحرف</string>
+    <string name="error_confirm_password">أعد كتابة كلمة المرور صحيحة</string>
+    <string name="auth_failed">فضل في التسجيل، أعد المحاولة مرة أخري</string>
+    <string name="error_incorrect_password">كلمة المرور خطأ</string>
+    <string name="error_incorrect_confirm_password">أعد كتابة كلمة المرور صحيحة</string>
+    <string name="error_incorrect_credentials">البريد الالكتروني أو كلمة المرور غير صحيحة</string>
+    <string name="error_validate_data">أضف جميع الحقول</string>
+    <string name="error_no_blob">لا يوجد ذكريات مع أحد</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="success_add_memory">تم اضافة ذكري بنجاح</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">التسجيل</string>
+    <string name="title_activity_main_app">فكرني</string>
+    <string name="title_activity_edit_memory">تفاصيل الذكري</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_memories">الذكريات</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scqn_qr_button">امسح الكود</string>
+    <string name="blobId">BlobId</string>
+    <string name="memoryEmptyState">بالرجاء اضافة شخص عن طريق مسح اكود</string>
+    <string name="memory_title">أضف عنوان الذكري</string>
+    <string name="you_say">انت تقول عن الذكري</string>
+    <string name="mate_say">رفيقك يقول عن الذكري</string>
+    <string name="sava_button">حفظ</string>
+    <string name="add_title_description">أضف عنوان الذكري</string>
+    <string name="add_date_description">أضف تاريخ الذكري</string>
+    <string name="add_your_description">أضف تفاصيل الذكري</string>
+    <string name="add_your_mate_description">تفاصيل رفيقك</string>
+    <string name="add_gps_description">تسجيل الموقع</string>
+    <string name="save_memory_description">حفظ الذكري</string>
+    <string name="scan_qr">مسح الكود</string>
+</resources>

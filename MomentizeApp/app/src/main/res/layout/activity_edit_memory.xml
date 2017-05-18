@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        tools:context="com.dcc.momentizeapp.MainApp.EditMemory">
+
+    <include
+        layout="@layout/overlay_loading"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:numColumns="auto_fit"
+            android:id="@+id/gridView"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/memory_title"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:hint="@string/memory_title"
+        android:inputType="text"
+
+        android:contentDescription="@string/add_title_description"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/add_gps_description"
+            android:onClick="onGpsPressed"
+            android:tint="@android:color/transparent"
+            app:layout_constraintLeft_toRightOf="@+id/memory_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/ic_gps_fixed_black_24px"
+            tools:layout_editor_absoluteY="195dp" />
+
+    </LinearLayout>
+    <!--<GridView-->
+            <!--android:id="@+id/gridView"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--app:layout_constraintHorizontal_bias="0.437"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--tools:layout_editor_absoluteY="19dp">-->
+
+        <!--</GridView>-->
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="257dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/add_date_description"/>
+
+
+
+    <EditText
+        android:id="@+id/mate_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/mate_say"
+        android:inputType="textMultiLine"
+        android:contentDescription="@string/add_your_mate_description"/>
+
+    <EditText
+        android:id="@+id/your_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/you_say"
+        android:contentDescription="@string/add_your_description"/>
+
+    <Button
+        android:id="@+id/save_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorSecondaryDark"
+        android:contentDescription="@string/save_memory_description"
+        android:elevation="8dp"
+        android:onClick="onSavePressed"
+        android:text="@string/sava_button" />
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

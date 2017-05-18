@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">MomentizeApp</string>
+    <string name="app_name">Momentize App</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -13,13 +15,34 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_incorrect_confirm_password">Confirm your password correctly</string>
     <string name="error_incorrect_credentials">This password or email address is incorrect</string>
+    <string name="error_validate_data">Add all fields for the memory</string>
+    <string name="error_no_blob">No blob exists, please Scan your mate code in the scan tab</string>
     <string name="error_field_required">This field is required</string>
+    <string name="success_add_memory">You have successfully added a new memory. Enjoy ;)</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_main_app">Momentize</string>
+    <string name="title_activity_edit_memory">Memory Details</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_memories">Memories</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scqn_qr_button">Scan your mate QR</string>
+    <string name="blobId">BlobId</string>
+    <string name="memoryEmptyState">Please Link your account with your mate from Link to mate</string>
+    <string name="memory_title">Add Memory Title</string>
+    <string name="you_say">You say about the memory</string>
+    <string name="mate_say">Your mate says about the memory</string>
+    <string name="sava_button">Save</string>
+    <string name="add_title_description">Add Title for memory here</string>
+    <string name="add_date_description">Add a date for the memory</string>
+    <string name="add_your_description">Add your description here</string>
+    <string name="add_your_mate_description">Add your mate description</string>
+    <string name="add_gps_description">Share your location</string>
+    <string name="save_memory_description">Save your memory</string>
+    <string name="scan_qr">Scan QR</string>
 </resources>

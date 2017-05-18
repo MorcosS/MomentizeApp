@@ -41,6 +41,7 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.CommonStatusCodes;
+import com.google.android.gms.samples.vision.ocrreader.DataBase.OCRDatabase;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSource;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.CameraSourcePreview;
 import com.google.android.gms.samples.vision.ocrreader.ui.camera.GraphicOverlay;
@@ -75,6 +76,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
     // Helper objects for detecting taps and pinches.
     private ScaleGestureDetector scaleGestureDetector;
     private GestureDetector gestureDetector;
+    OCRDatabase ocrDatabase;
 String refinedText;
     /**
      * Initializes the UI and creates the detector pipeline.
@@ -83,7 +85,7 @@ String refinedText;
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.ocr_capture);
-
+ocrDatabase = new OCRDatabase(this);
         mPreview = (CameraSourcePreview) findViewById(R.id.preview);
         mGraphicOverlay = (GraphicOverlay<OcrGraphic>) findViewById(R.id.graphicOverlay);
 
@@ -403,29 +405,38 @@ String refinedText;
         }
     }
     public String detectText(String text) {
-try {
-    String myText = text.split("\n")[0];
-    String myText1 = myText.split("E")[1];
-    String myText2 = myText1.split("m")[0];
-    refinedText ="";
-    for (int i = 0; i < myText2.length();i++) {
-        Log.v("hihi", myText2.charAt(i) + "ana elawl");
-        switch (myText2.charAt(i)) {
-
-            case 'a':
-            case 'D':
-            case 'O':
-                refinedText += "0";break;
-            case 'A': refinedText+=4;break;
-            case 'B': refinedText+=8;break;
-            default:
-                refinedText += myText2.charAt(i);
+        String myText2=text;
+        String myText = text;
+        String myText1 = text;
+        try {
+            myText = text.split("\n")[0];
+        }catch (Exception e) {
         }
-    }
+        try {
+            myText1 = myText.split("E")[1];
+        }catch (Exception e) {
+
+        }try{
+            myText2 = myText1.split("m")[0];
+            refinedText ="";
         }catch(Exception e){
 
-}
+        }
+        myText2 = myText2.replace(" ","");
+        for (int i = 0; i < myText2.length();i++) {
+            Log.v("hihi", Character.isDigit(myText2.charAt(i)) + "ana elawl");
+            if(!Character.isDigit(myText2.charAt(i))){
+                try {
+                    refinedText += ocrDatabase.getOCR(myText2.charAt(i) + "");
+                }catch(Exception e){
+                    refinedText+=myText2.charAt(i);
+                }
+            }else{
+                refinedText+=myText2.charAt(i);
+            }
 
-              return refinedText;
+    }
+            return refinedText;
+
     }
 }

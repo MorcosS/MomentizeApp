@@ -56,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
-Firebase.setAndroidContext(this);
+        Firebase.setAndroidContext(this);
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         size = 0;
         res = getResources();

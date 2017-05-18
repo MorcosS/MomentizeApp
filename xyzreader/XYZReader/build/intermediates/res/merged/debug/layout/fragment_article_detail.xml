@@ -37,7 +37,6 @@
                     android:layout_height="wrap_content"
                     android:textColorLink="@color/theme_accent"
                     android:textSize="@dimen/detail_body_text_size"
-                    android:gravity="center"
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
 
         </LinearLayout>

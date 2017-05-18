@@ -1,6 +1,8 @@
 package systembatarka.com.batarka.app.batarkasystem;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,6 +15,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -20,6 +23,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
@@ -68,13 +72,16 @@ public class Add_M5dumin extends AppCompatActivity {
     public static Firebase myFirebaseRef;
     ImageView ivOriginal;
     String imageInBase64;
-
+    TextView dob;
+    Intent intent;
+    public static int year, month,day;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Firebase.setAndroidContext(this);
         setContentView(R.layout.activity_add__m5dumin);
          myFirebaseRef = new Firebase("https://batarkasystem.firebaseio.com/");
+        intent = getIntent();
         // Set up the login form.
         imageInBase64 = "No Image";
         FirebaseStorage storage = FirebaseStorage.getInstance();
@@ -92,6 +99,7 @@ public class Add_M5dumin extends AppCompatActivity {
 
             }
         });
+         dob = (TextView) findViewById(R.id.textView7);
         m5dumName= (EditText) findViewById(R.id.m5dum_name);
         m5dumAddress = (EditText) findViewById(R.id.m5dum_address);
         m5dumFlatNo = (EditText) findViewById(R.id.m5dum_flatNo);
@@ -100,8 +108,24 @@ public class Add_M5dumin extends AppCompatActivity {
         m5dumPhone = (EditText) findViewById(R.id.m5dum_phone);
         m5dumFatherMob = (EditText) findViewById(R.id.m5dum_mobileFather);
         m5dumMotherMob = (EditText) findViewById(R.id.m5dum_mobileMother);
-        m5dumMilad = (DatePicker) findViewById(R.id.datePicker);
         m5dumPhoto = (ImageButton) findViewById(R.id.imageButton);
+        try {
+            intent.getStringExtra("id") ;
+            m5dumName.setText(intent.getStringExtra("Name"));
+            m5dumAddress.setText(intent.getStringExtra("Address"));
+            m5dumFlatNo.setText(intent.getStringExtra("FlatNo"));
+            m5dumFloorNo.setText(intent.getStringExtra("FloorNo"));
+            m5dumMobile.setText(intent.getStringExtra("Mobile"));
+            m5dumPhone.setText(intent.getStringExtra("Phone"));
+            m5dumFatherMob.setText(intent.getStringExtra("FatherMob"));
+            m5dumMotherMob.setText(intent.getStringExtra("MotherMob"));
+            dob.setText(intent.getStringExtra("DOB"));
+            year = Integer.parseInt(intent.getStringExtra("DOB").split("/")[2]);
+            month = Integer.parseInt(intent.getStringExtra("DOB").split("/")[1]);
+            day = Integer.parseInt(intent.getStringExtra("DOB").split("/")[0]);
+        }catch(Exception e){
+
+        }
         m5dumPhoto.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -134,7 +158,32 @@ public class Add_M5dumin extends AppCompatActivity {
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                generateQRAndSend();
+                try{
+                    intent.getStringExtra("id");
+                    m5dumID = Integer.parseInt(intent.getStringExtra("id"));
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Name").setValue(m5dumName.getText().toString());
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Address").setValue(m5dumAddress.getText().toString());
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("FloorNo").setValue(m5dumFloorNo.getText().toString());
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("FlatNo").setValue(m5dumFlatNo.getText().toString());
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Mobile").setValue(m5dumMobile.getText().toString());
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Phone").setValue(m5dumPhone.getText().toString());
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("FatherMob").setValue(m5dumFatherMob.getText().toString());
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("MotherMob").setValue(m5dumMotherMob.getText().toString());
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Points").child("PointsTotal").setValue(0);
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("DOB").setValue(day+"/"
+                            +(month)+"/"+year);
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Photo").setValue(imageInBase64);
+                    myFirebaseRef.child("Classes").child(myClass).child("m5dumIDs").setValue(m5dumID);
+                    Toast.makeText(Add_M5dumin.this, "تم تعديل المخدوم بنجاح.", Toast.LENGTH_LONG).show();
+                    finish();
+                }
+                catch (Exception e){
+
+
+
+
+                    generateQRAndSend();
+                }
             }
                        });
 
@@ -154,8 +203,8 @@ public class Add_M5dumin extends AppCompatActivity {
                     bmp.setPixel(x, y, bitMatrix.get(x, y) ? Color.BLACK : Color.WHITE);
                 }
             }
-            m5dumPhoto.setImageBitmap(bmp);
-            StorageReference imagesRef = storageRef.child("أسرة البطاركة ١٧٣٣"+"/"+myClass+"/"+m5dumName.getText().toString()+".jpg");
+         //   m5dumPhoto.setImageBitmap(bmp);
+            StorageReference imagesRef = storageRef.child("أسرة البطاركة ١٧٣٣"+"/"+"QR"+"/"+myClass+"/"+m5dumName.getText().toString()+".jpg");
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             bmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);
             byte[] data = baos.toByteArray();
@@ -171,22 +220,25 @@ public class Add_M5dumin extends AppCompatActivity {
                 @Override
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
-                    Uri downloadUrl = taskSnapshot.getDownloadUrl();
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Name").setValue(m5dumName.getText().toString());
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Address").setValue(m5dumAddress.getText().toString());
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("FloorNo").setValue(m5dumFloorNo.getText().toString());
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("FlatNo").setValue(m5dumFlatNo.getText().toString());
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Mobile").setValue(m5dumMobile.getText().toString());
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Phone").setValue(m5dumPhone.getText().toString());
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("FatherMob").setValue(m5dumFatherMob.getText().toString());
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("MotherMob").setValue(m5dumMotherMob.getText().toString());
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Points").child("PointsTotal").setValue(0);
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("DOB").setValue(m5dumMilad.getDayOfMonth()+"/"
-                            +(m5dumMilad.getMonth()+1)+"/"+m5dumMilad.getYear());
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Photo").setValue(imageInBase64);
-                    myFirebaseRef.child("Classes").child(myClass).child("m5dumIDs").setValue(m5dumID);
-                    Toast.makeText(Add_M5dumin.this, "قد تم إضافة المخدوم بنجاح.", Toast.LENGTH_LONG).show();
-                    finish();
+
+                        Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Name").setValue(m5dumName.getText().toString());
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Address").setValue(m5dumAddress.getText().toString());
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("FloorNo").setValue(m5dumFloorNo.getText().toString());
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("FlatNo").setValue(m5dumFlatNo.getText().toString());
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Mobile").setValue(m5dumMobile.getText().toString());
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Phone").setValue(m5dumPhone.getText().toString());
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("FatherMob").setValue(m5dumFatherMob.getText().toString());
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("MotherMob").setValue(m5dumMotherMob.getText().toString());
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Points").child("PointsTotal").setValue(0);
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("DOB").setValue(day+"/"
+                                +(month)+"/"+year);
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumin").child(m5dumID+"").child("Photo").setValue(imageInBase64);
+                        myFirebaseRef.child("Classes").child(myClass).child("m5dumIDs").setValue(m5dumID);
+                        Toast.makeText(Add_M5dumin.this, "قد تم إضافة المخدوم بنجاح.", Toast.LENGTH_LONG).show();
+                        finish();
+
+
                 }
             });
 
@@ -203,6 +255,24 @@ public class Add_M5dumin extends AppCompatActivity {
             byte[] byteArr = byteArray.toByteArray();
             imageInBase64 = Base64.encodeToString(byteArr, Base64.DEFAULT);
             m5dumPhoto.setImageBitmap(image);
+            StorageReference imagesRef = storageRef.child("أسرة البطاركة ١٧٣٣"+"/"+"صور المخدومين"+"/"+myClass+"/"+m5dumName.getText().toString()+".jpg");
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+           UploadTask uploadTask = imagesRef.putBytes(byteArr);
+            uploadTask.addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception exception) {
+                    // Handle unsuccessful uploads
+                    Toast.makeText(Add_M5dumin.this, "لم يتم إضافة المخدوم.", Toast.LENGTH_LONG).show();
+                    finish();
+                }
+            }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
+
+                }
+            });
+
         }else if(requestCode == 1 && resultCode == RESULT_OK && data != null){
             Uri selectedImage = data.getData();
             InputStream imageStream = null;
@@ -217,11 +287,62 @@ public class Add_M5dumin extends AppCompatActivity {
             byte[] byteArr1 = byteArray1.toByteArray();
             imageInBase64 = Base64.encodeToString(byteArr1, Base64.DEFAULT);
             m5dumPhoto.setImageBitmap(image1);
+            StorageReference imagesRef = storageRef.child("أسرة البطاركة ١٧٣٣"+"/"+"صور المخدومين"+"/"+myClass+"/"+m5dumName.getText().toString()+".jpg");
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            UploadTask uploadTask = imagesRef.putBytes(byteArr1);
+            uploadTask.addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception exception) {
+                    // Handle unsuccessful uploads
+                    Toast.makeText(Add_M5dumin.this, "لم يتم إضافة المخدوم.", Toast.LENGTH_LONG).show();
+                    finish();
+                }
+            }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
+
+                }
+            });
+
 
         }else{
             finish();
         }
     }
+    @SuppressWarnings("deprecation")
+    public void setDate(View view) {
+        showDialog(2000+999);
 
+    }
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        // TODO Auto-generated method stub
+        if (id == 2000+999) {
+            return new DatePickerDialog(this, myDateListener, year, month, day);
+        }
+        return null;
+    }
+
+    private DatePickerDialog.OnDateSetListener myDateListener = new DatePickerDialog.OnDateSetListener() {
+        @Override
+        public void onDateSet(DatePicker arg0, int arg1, int arg2, int arg3) {
+            // TODO Auto-generated method stub
+             year =  arg1;
+            month= arg2 + 1;
+            day = arg3;
+        dob.setText(day+"/"+month+"/"+year);
+        }
+    };
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
 }
+
 

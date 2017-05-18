@@ -1,4 +1,4 @@
-#Sat Mar 25 19:22:37 EET 2017
+#Tue Mar 28 21:55:10 EET 2017
 base.0=/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_318d1ca877e3ac480e66ab59044b0f0aa287a770
 renamed.1=classes2.dex
 renamed.0=classes.dex

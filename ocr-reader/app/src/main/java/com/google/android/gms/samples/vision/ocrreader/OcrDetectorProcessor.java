@@ -53,7 +53,7 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
                 OcrGraphic graphic = new OcrGraphic(mGraphicOverlay, item);
                 mGraphicOverlay.add(graphic);
 
-           //
+
            }
         }
     }

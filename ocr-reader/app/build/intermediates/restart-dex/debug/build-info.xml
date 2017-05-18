@@ -4,26 +4,26 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="232829490211825" >
+    timestamp="20031545298121" >
 
     <task
         name="javac"
-        duration="7392" />
+        duration="10021" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1340" />
+        duration="2557" />
     <task
         name="verifier"
-        duration="151" />
+        duration="355" />
 
     <artifact
         location="/Users/MorcosS/StudioProjects/ocr-reader/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="232829490211825" >
+    <build timestamp="20031545298121" >
         <artifact
             location="/Users/MorcosS/StudioProjects/ocr-reader/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />

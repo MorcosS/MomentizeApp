@@ -6,7 +6,7 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1490462616699"
+    timestamp="1490730903375"
     token="-1617655771036494920"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -23,13 +23,14 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
+        type="SPLIT_MAIN" />
+
     <build
         build-mode="FULL"
-        timestamp="1490462550042"
+        timestamp="1490729883065"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
@@ -63,10 +64,17 @@
         <artifact
             location="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1490462616699"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="1490730903375"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
 
 </instant-run>

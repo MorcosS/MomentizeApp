@@ -30,6 +30,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.samples.vision.ocrreader.DataBase.DBHelper;
+import com.google.android.gms.samples.vision.ocrreader.DataBase.OCRDatabase;
 
 import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
@@ -60,12 +61,14 @@ private  EditText editText;
     private static String METHOD_NAME1 = "GetData";
     private static String METHOD_NAME2 = "GetDataResponse";
     private static String URL = "http://comws.vitalpro.net/webservice2.asmx";
+  OCRDatabase ocrDatabase;
 DBHelper dbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 c= Calendar.getInstance();
+        ocrDatabase = new OCRDatabase(this);
         dbHelper= new DBHelper(this);
         statusMessage = (TextView)findViewById(R.id.status_message);
         textValue = (TextView)findViewById(R.id.text_value);
@@ -136,8 +139,27 @@ c= Calendar.getInstance();
                     ok.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            text[0] = editText.getText().toString().replace(" ","");
-                            textValue.setText(text[0]);
+                            String edittext = editText.getText().toString().replace(" ","");
+                            textValue.setText(edittext);
+                            text[0] = text[0].replace(" ","");
+                            for(int i = 0; i<edittext.length();i++) {
+                                if (!Character.isDigit(text[0].charAt(i))) {
+                                    try {
+                                        if (ocrDatabase.getOCRID(text[0].charAt(i) + "", edittext.charAt(i) + "") != -1) {
+                                            ocrDatabase.UpdateOCR(ocrDatabase.getOCRID(text[0].charAt(i) + "", edittext.charAt(i) + "")
+                                                    , ocrDatabase.getOCR_Repeatance(ocrDatabase.getOCRID(text[0].charAt(i) + "", edittext.charAt(i) + "")) + 1);
+
+                                            Log.v("hihi", "updated");
+                                        } else {
+                                            Log.v("hihi", "hainsert");
+                                            ocrDatabase.insertOCR(text[0].charAt(i) + "", edittext.charAt(i) + "", 1);
+                                        }
+                                    } catch (Exception e) {
+                                        ocrDatabase.insertOCR(text[0].charAt(i) + "", edittext.charAt(i) + "", 1);
+                                        Log.v("hihi", "catch lih inserted " + text[0].charAt(i) + " hwa dh s7? " + edittext.charAt(i) + " ha s7 ? ");
+                                    }
+                                }
+                            }
                             editText.setVisibility(View.GONE);
                             ok.setVisibility(View.GONE);
                         }

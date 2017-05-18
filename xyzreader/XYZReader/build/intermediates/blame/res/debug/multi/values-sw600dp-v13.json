@@ -11,7 +11,14 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 68,
+                        "endOffset": 119
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 188
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 124,
+                        "endColumn": 68,
+                        "endOffset": 188
+                    }
                 }
             },
             {
@@ -35,7 +49,14 @@
                     "endOffset": 258
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 193,
+                        "endColumn": 69,
+                        "endOffset": 258
+                    }
                 }
             },
             {
@@ -47,7 +68,14 @@
                     "endOffset": 332
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 263,
+                        "endColumn": 73,
+                        "endOffset": 332
+                    }
                 }
             },
             {
@@ -59,7 +87,14 @@
                     "endOffset": 408
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 337,
+                        "endColumn": 75,
+                        "endOffset": 408
+                    }
                 }
             },
             {
@@ -71,7 +106,14 @@
                     "endOffset": 467
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 413,
+                        "endColumn": 58,
+                        "endOffset": 467
+                    }
                 }
             },
             {
@@ -83,7 +125,14 @@
                     "endOffset": 538
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 472,
+                        "endColumn": 70,
+                        "endOffset": 538
+                    }
                 }
             },
             {
@@ -95,7 +144,14 @@
                     "endOffset": 606
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/b17d3d883c3ee66f90654a5c97e68fa4ff9fa755/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 543,
+                        "endColumn": 67,
+                        "endOffset": 606
+                    }
                 }
             },
             {
@@ -126,7 +182,14 @@
                     "endOffset": 713
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 59,
+                        "endOffset": 110
+                    }
                 }
             },
             {
@@ -138,7 +201,14 @@
                     "endOffset": 783
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 115,
+                        "endColumn": 69,
+                        "endOffset": 180
+                    }
                 }
             },
             {
@@ -150,7 +220,14 @@
                     "endOffset": 854
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 185,
+                        "endColumn": 70,
+                        "endOffset": 251
+                    }
                 }
             },
             {
@@ -162,7 +239,14 @@
                     "endOffset": 926
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 256,
+                        "endColumn": 71,
+                        "endOffset": 323
+                    }
                 }
             },
             {
@@ -174,7 +258,14 @@
                     "endOffset": 984
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 328,
+                        "endColumn": 57,
+                        "endOffset": 381
+                    }
                 }
             },
             {
@@ -186,7 +277,14 @@
                     "endOffset": 1042
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 386,
+                        "endColumn": 57,
+                        "endOffset": 439
+                    }
                 }
             },
             {
@@ -198,7 +296,14 @@
                     "endOffset": 1148
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 444,
+                        "endColumn": 105,
+                        "endOffset": 545
+                    }
                 }
             },
             {
@@ -210,7 +315,14 @@
                     "endOffset": 1212
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 63,
+                        "endOffset": 609
+                    }
                 }
             },
             {
@@ -222,7 +334,14 @@
                     "endOffset": 1269
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 325,
+                        "endColumn": 56,
+                        "endOffset": 377
+                    }
                 }
             },
             {
@@ -234,7 +353,14 @@
                     "endOffset": 1322
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 90,
+                        "endColumn": 52,
+                        "endOffset": 138
+                    }
                 }
             },
             {
@@ -246,7 +372,14 @@
                     "endOffset": 1377
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 88,
+                        "endColumn": 54,
+                        "endOffset": 138
+                    }
                 }
             },
             {
@@ -258,7 +391,14 @@
                     "endOffset": 1434
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 143,
+                        "endColumn": 56,
+                        "endOffset": 195
+                    }
                 }
             },
             {
@@ -270,7 +410,14 @@
                     "endOffset": 1500
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 259,
+                        "endColumn": 65,
+                        "endOffset": 320
+                    }
                 }
             },
             {
@@ -282,7 +429,14 @@
                     "endOffset": 1559
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 200,
+                        "endColumn": 58,
+                        "endOffset": 254
+                    }
                 }
             },
             {
@@ -294,7 +448,14 @@
                     "endOffset": 1611
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/macro_layout.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 36,
+                        "endColumn": 51,
+                        "endOffset": 83
+                    }
                 }
             },
             {
@@ -306,7 +467,14 @@
                     "endOffset": 1665
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 36,
+                        "endColumn": 53,
+                        "endOffset": 85
+                    }
                 }
             },
             {
@@ -318,7 +486,14 @@
                     "endOffset": 1707
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 238,
+                        "endColumn": 41,
+                        "endOffset": 275
+                    }
                 }
             },
             {
@@ -330,7 +505,14 @@
                     "endOffset": 1802
                 },
                 "from": {
-                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml"
+                    "file": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/values-sw600dp/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 143,
+                        "endColumn": 94,
+                        "endOffset": 233
+                    }
                 }
             },
             {
@@ -342,7 +524,14 @@
                     "endOffset": 1865
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 614,
+                        "endColumn": 62,
+                        "endOffset": 672
+                    }
                 }
             },
             {
@@ -355,7 +544,15 @@
                     "endOffset": 2047
                 },
                 "from": {
-                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml"
+                    "file": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 677,
+                        "endLine": 14,
+                        "endColumn": 12,
+                        "endOffset": 854
+                    }
                 }
             }
         ]

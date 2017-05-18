@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable-v21/white_selectable_item_background_circle.xml",
-        "source": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/drawable-v21/white_selectable_item_background_circle.xml"
-    },
-    {
         "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
         "source": "/Users/MorcosS/.android/build-cache/a60169eb8b563ea4094e079c16dfdc6de3b159e3/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable-v21/white_selectable_item_background_circle.xml",
+        "source": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/src/main/res/drawable-v21/white_selectable_item_background_circle.xml"
     },
     {
         "merged": "/Users/MorcosS/StudioProjects/xyzreader/XYZReader/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",

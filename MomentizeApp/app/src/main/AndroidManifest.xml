@@ -7,6 +7,11 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -14,12 +19,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -33,12 +40,43 @@
         </activity>
         <activity
             android:name=".MainApp.MainApp"
-            android:label="@string/title_activity_main_app">
+            android:label="@string/title_activity_main_app"
+            android:theme="@style/AppTheme.NoActionBar" />
 
-        </activity>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="3b9c7f980f92f6963cd5070716c2b211ac2e0af3" />
+
+        <activity android:name=".MainApp.EditMemory"
+            android:label="@string/title_activity_edit_memory"
+            android:parentActivityName=".MainApp.MainApp">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dcc.momentizeapp.MainApp.MainApp" />
+            </activity>
+        <activity android:name=".QR.QrActivity"
+            android:parentActivityName=".MainApp.MainApp">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dcc.momentizeapp.MainApp.MainApp" />
+        </activity>
+        <activity android:name="me.ydcool.lib.qrmodule.activity.QrScannerActivity"/>
+        <receiver
+            android:name=".Widget.MomentizeAppWidget"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.dcc.momentizeapp.ACTION_DATA_UPDATED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidgetprovider" />
+        </receiver>
+
+        <service
+            android:name=".Widget.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
 
     </application>
 

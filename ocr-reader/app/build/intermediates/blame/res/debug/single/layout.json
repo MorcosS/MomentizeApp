@@ -160,12 +160,12 @@
         "source": "/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/notification_template_big_media.xml"
     },
     {
-        "merged": "/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_action_mode_bar.xml"
-    },
-    {
         "merged": "/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/res/merged/debug/layout/ocr_capture.xml",
         "source": "/Users/MorcosS/StudioProjects/ocr-reader/app/src/main/res/layout/ocr_capture.xml"
+    },
+    {
+        "merged": "/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",

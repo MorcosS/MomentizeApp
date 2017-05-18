@@ -2,81 +2,95 @@
 <items version="2" >
 
     <item
+        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.0.1_18df0af48d56255ed497c19a8c303378043bd680/classes.dex" />
+    </item>
+    <item
         jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.1"
         sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_9ed0b0bde6a1b5b30a8b16d4d3ae36b77c006d07.jar" />
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_9ed0b0bde6a1b5b30a8b16d4d3ae36b77c006d07/classes.dex" />
     </item>
     <item
         jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.1"
         sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.0.0_20e59429f86de159e040ec0de3f306079ff48610.jar" />
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.0_20e59429f86de159e040ec0de3f306079ff48610/classes.dex" />
     </item>
     <item
-        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         revision="23.0.1"
-        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.0.1_18df0af48d56255ed497c19a8c303378043bd680.jar" />
-    </item>
-    <item
-        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.0_e2e426f92c00b0a3a7fbf45db2b829f99b1ded1b.jar" />
-    </item>
-    <item
-        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f4e85eafa876cd7d7641244867dac3f88d71e866">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-vision-9.0.0_af57052abc8ac5eaa73b1782d4a79e0c8ce5d3d1.jar" />
-    </item>
-    <item
-        jar="/Users/MorcosS/android-sdks/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_3555a078ef28f5f1c69daccf23ee21535e8d11a5.jar" />
-    </item>
-    <item
-        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_05c196616dc8a2d9b14dbe7ea447f934199f0672.jar" />
+        sha1="8913fa4c4a39c4142439f89cd8d37844ab2dfc4c">
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9e0e0459fdcc4a2f0b039c085911ef95606d3ed9/classes.dex" />
     </item>
     <item
         jar="/Users/MorcosS/StudioProjects/ocr-reader/app/libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.1"
         sha1="e8796346a9191a019e936210a2dc50662c57594b">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/ksoap2-android-assembly-2.4-jar-with-dependencies_c337715298264d27ed13d96f56003ee751fa4856.jar" />
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/2/ksoap2-android-assembly-2.4-jar-with-dependencies_c337715298264d27ed13d96f56003ee751fa4856/classes.dex" />
     </item>
     <item
         jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.1"
         sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_31b84fc70aef1ea901e3caab51865a64b0688fca.jar" />
-    </item>
-    <item
-        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.0.0_3396f5c9d25066e1fc56eb60c9104f07eb30df95.jar" />
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.1_31b84fc70aef1ea901e3caab51865a64b0688fca/classes.dex" />
     </item>
     <item
         jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.1"
         sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
-        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.0.0_f60b7f179906e8795417f9736d9b0678cffa3ee5.jar" />
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.0_f60b7f179906e8795417f9736d9b0678cffa3ee5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/MorcosS/android-sdks/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_3555a078ef28f5f1c69daccf23ee21535e8d11a5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="923ba2b158cbcbfbe462bdc0ae81dc8905797bb0">
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c632f6909702b117062782841beceaf60bf586d2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.0.0_e2e426f92c00b0a3a7fbf45db2b829f99b1ded1b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f4e85eafa876cd7d7641244867dac3f88d71e866">
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.0.0_af57052abc8ac5eaa73b1782d4a79e0c8ce5d3d1/classes.dex" />
+    </item>
+    <item
+        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.0.0_3396f5c9d25066e1fc56eb60c9104f07eb30df95/classes.dex" />
+    </item>
+    <item
+        jar="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/MorcosS/StudioProjects/ocr-reader/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.1_05c196616dc8a2d9b14dbe7ea447f934199f0672/classes.dex" />
     </item>
 
 </items>

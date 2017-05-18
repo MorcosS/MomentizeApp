@@ -9,7 +9,7 @@
         <item
             android:id="@+id/nav_attend"
             android:icon="@drawable/church"
-            android:title="attendance" />
+            android:title="الحضور" />
         <item
             android:id="@+id/nav_tanawol"
             android:icon="@drawable/wine_and_bread"
@@ -27,19 +27,14 @@
             android:id="@+id/nav_excelence"
             android:icon="@drawable/ic_grade_black_24dp"
             android:title="التميز" />
-
-
-
-
-
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_Fair"
+                android:icon="@drawable/ic_redeem_black_24dp"
+                android:title="معرض الأختام" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"

@@ -49,8 +49,7 @@
         android:ems="10"
         android:hint="@string/memory_title"
         android:inputType="text"
-
-        android:contentDescription="@string/add_title_description"/>
+/>
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -98,7 +97,7 @@
         android:id="@+id/mate_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/mate_say"
@@ -112,8 +111,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="@string/you_say"
-        android:contentDescription="@string/add_your_description"/>
+        android:hint="@string/you_say"/>
 
     <Button
         android:id="@+id/save_button"
@@ -124,7 +122,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:background="@color/colorSecondaryDark"
-        android:contentDescription="@string/save_memory_description"
         android:elevation="8dp"
         android:onClick="onSavePressed"
         android:text="@string/sava_button" />

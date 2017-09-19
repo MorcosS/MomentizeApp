@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "333180276001",
+    "firebase_url": "https://romance-pharmacy.firebaseio.com",
+    "project_id": "romance-pharmacy",
+    "storage_bucket": "romance-pharmacy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333180276001:android:107e224232df29f8",
+        "android_client_info": {
+          "package_name": "pharmacy.morcos.andrew.drpharmacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333180276001-s8fh2k1lv9pl30ac8tpvl0ln0i0ucmkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfX61jJ6m7g6lSYtnKYUoF4paA60bTZqg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

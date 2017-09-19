@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Scout Finance</string>
+    <string name="action_settings">Settings</string>
+    <string name="myTeam">myTeam</string>
+    <array name="Teams">
+        <item>فريق أشبال جوي</item>
+        <item>فريق أشبال بحري</item>
+        <item>فريق زهرات جوي</item>
+        <item>فريق زهرات بحري</item>
+        <item>فريق كشاف مبتدئ جوي</item>
+        <item>فريق كشاف مبتدئ بحري</item>
+        <item>فريق مرشدات مبتدئ جوي</item>
+        <item>فريق مرشدات مبتدئ بحري</item>
+        <item>فريق مبتدئ جوي</item>
+        <item>فريق مبتدئ بحري</item>
+        <item>فريق مرشدات جوي</item>
+        <item>فريق مرشدات بحري</item>
+        <item>فريق متقدم جوي</item>
+        <item>فريق متقدم بحري</item>
+        <item>فريق متقدمات جوي</item>
+        <item>فريق متقدمات بحري</item>
+    </array>
+</resources>

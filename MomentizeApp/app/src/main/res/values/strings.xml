@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
@@ -44,5 +44,21 @@
     <string name="add_your_mate_description">Add your mate description</string>
     <string name="add_gps_description">Share your location</string>
     <string name="save_memory_description">Save your memory</string>
+    <string name="add_memory_description">Add your memory</string>
+    <string name="No">No</string>
+    <string name="yes">yes</string>
     <string name="scan_qr">Scan QR</string>
+    <string name="add_image_menu">Choose Photo From ..</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="uid_qr_image">Your personal Qr Code for scanning</string>
+    <string name="uploaded_image">Uploaded image</string>
+    <string name="memory_image">Memory image</string>
+    <string name="launcher_image">Launcher image</string>
+    <string name="no_account">Do not have an Account. Register?</string>
+    <string name="title">Title</string>
+    <string name="empty">empty</string>
+    <string name="enable_gps">GPS is Required but Disabled : Enable GPS , Restart App.</string>
+    <string name="enable_network">Network is Required but Disabled : Enable Network , Restart App.</string>
+    <string name="successful_login">You have logged in successfully</string>
 </resources>

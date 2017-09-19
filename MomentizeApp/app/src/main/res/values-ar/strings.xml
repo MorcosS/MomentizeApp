@@ -45,4 +45,19 @@
     <string name="add_gps_description">تسجيل الموقع</string>
     <string name="save_memory_description">حفظ الذكري</string>
     <string name="scan_qr">مسح الكود</string>
+    <string name="add_memory_description">أضف ذكري جديدة</string>
+    <string name="No">لا</string>
+    <string name="yes">نعم</string>
+    <string name="add_image_menu">اختر من القائمة</string>
+    <string name="camera">الكاميرا</string>
+    <string name="gallery">الاستديو</string>
+    <string name="uid_qr_image">صورة الكود الخاص بك</string>
+    <string name="uploaded_image">الصور التي تود اضافتها علي الذكري</string>
+    <string name="memory_image">صور الذكري</string>
+    <string name="launcher_image">صورة التطبيق</string>
+    <string name="no_account">ليس لديك حساب؟ قم بالتسجيل</string>
+    <string name="title">العنوان</string>
+    <string name="empty">لا توجد معلومات</string>
+    <string name="enable_gps">بالرجاء تفعيل خدمة تحديد الموقع</string>
+    <string name="successful_login">تم الدخول بنجاح</string>
 </resources>

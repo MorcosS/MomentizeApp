@@ -134,9 +134,9 @@ public class EditMemory extends AppCompatActivity {
 
         if (!GPSEnabled) {
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setMessage("GPS is Required but Disabled : Enable GPS , Restart App.");
+            alertDialogBuilder.setMessage(getString(R.string.enable_gps));
 
-            alertDialogBuilder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+            alertDialogBuilder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface arg0, int arg1) {
                     startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
@@ -144,7 +144,7 @@ public class EditMemory extends AppCompatActivity {
                 }
             });
 
-            alertDialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            alertDialogBuilder.setNegativeButton(getString(R.string.No), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     finish();
@@ -159,17 +159,17 @@ public class EditMemory extends AppCompatActivity {
 
         if (!NetworkEnabled) {
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setMessage("Network is Required but Disabled : Enable Network , Restart App.");
+            alertDialogBuilder.setMessage(getString(R.string.enable_network));
 
-            alertDialogBuilder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+            alertDialogBuilder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface arg0, int arg1) {
-                    startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                    startActivity(new Intent(Settings.ACTION_NETWORK_OPERATOR_SETTINGS));
                     finish();
                 }
             });
 
-            alertDialogBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            alertDialogBuilder.setNegativeButton(getString(R.string.No), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     finish();
@@ -259,41 +259,42 @@ public class EditMemory extends AppCompatActivity {
             memory.setMemoryDate(calendar.getTime().toString());
 
             memory.setLocation(lat, lon);
-            final String key = mDatabase.child("Blobs").child(blobID).child("Memories").push().getKey();
-            if (!blobID.isEmpty()) {
-                mDatabase.child("Blobs").child(blobID).child("Memories").child(key).setValue(memory);
+            if (blobID!=null && !blobID.isEmpty()) {
+
+                final String key = mDatabase.child("Blobs").child(blobID).child("Memories").push().getKey();
+               mDatabase.child("Blobs").child(blobID).child("Memories").child(key).setValue(memory);
                 TastyToast.makeText(this,getString(R.string.success_add_memory),TastyToast.LENGTH_LONG,TastyToast.SUCCESS).show();
+                if (imagesList.size() > 1) {
+                    int i =0;
+                    for (Bitmap bitmap : imagesList) {
+                        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+                        byte[] data = baos.toByteArray();
+                        UploadTask uploadTask = storageRef.child(blobID).child(key+""+i+".jpg").putBytes(data);
+                        uploadTask.addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception exception) {
+                                // Handle unsuccessful uploads
+                            }
+                        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                            @Override
+                            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                                // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
+                                @SuppressWarnings("VisibleForTests") Uri uri = taskSnapshot.getDownloadUrl();
+
+                                String key1 = mDatabase.child("Blobs").child(blobID).child("Memories").child(key).child("imagesURi").push().getKey();
+                                mDatabase.child("Blobs").child(blobID).child("Memories").child(key).child("imagesURi").child(key1).setValue(uri.toString());
+                            }
+                        });
+                        i++;
+                    }
+                    memory.setImagesUri(imagesUri);
+                }
                 showProgress(false);
                 finish();
             }else{
                 showProgress(false);
                 TastyToast.makeText(this,getString(R.string.error_no_blob),TastyToast.LENGTH_LONG,TastyToast.CONFUSING).show();
-            }
-            if (imagesList.size() > 1) {
-                int i =0;
-                for (Bitmap bitmap : imagesList) {
-                    ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-                    byte[] data = baos.toByteArray();
-                    UploadTask uploadTask = storageRef.child(blobID).child(key+""+i+".jpg").putBytes(data);
-                    uploadTask.addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception exception) {
-                            // Handle unsuccessful uploads
-                        }
-                    }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
-                            @SuppressWarnings("VisibleForTests") Uri uri = taskSnapshot.getDownloadUrl();
-
-                            String key1 = mDatabase.child("Blobs").child(blobID).child("Memories").child(key).child("imagesURi").push().getKey();
-                            mDatabase.child("Blobs").child(blobID).child("Memories").child(key).child("imagesURi").child(key1).setValue(uri.toString());
-                        }
-                    });
-                    i++;
-                }
-                memory.setImagesUri(imagesUri);
             }
 
         }else{

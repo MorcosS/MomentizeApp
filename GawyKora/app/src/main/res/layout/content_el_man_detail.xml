@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dcc.gawykora.ElManDetail"
+    tools:showIn="@layout/activity_el_man_detail"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+        <CheckBox
+            android:id="@+id/attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الحضور" />
+
+        <CheckBox
+            android:id="@+id/bible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الكتاب المقدس" />
+
+        <CheckBox
+            android:id="@+id/nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" النوتة الكشفية" />
+
+        <CheckBox
+            android:id="@+id/agpeya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" الأجبية" />
+
+        <CheckBox
+            android:id="@+id/pen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" القلم" />
+
+
+        <CheckBox
+            android:id="@+id/competition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" البحث ، التسميع" />
+
+        <CheckBox
+            android:id="@+id/spiritual_nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" النوتة الروحية" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/increase"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="إضافة"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/decrease"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="خصم"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:text="تسجيل النقاط"
+            android:onClick="onSave"/>
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

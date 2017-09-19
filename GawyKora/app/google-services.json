@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1093912737204",
+    "firebase_url": "https://gawykora.firebaseio.com",
+    "project_id": "gawykora",
+    "storage_bucket": "gawykora.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093912737204:android:10b951911ecc21b3",
+        "android_client_info": {
+          "package_name": "com.dcc.gawykora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093912737204-ekk6so14m4h1hgdfj1cd05hsors2fscg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dcc.gawykora",
+            "certificate_hash": "076be54bec59d5e9ffa5cf4bcddc945deb813d4d"
+          }
+        },
+        {
+          "client_id": "1093912737204-59f5dffr4n418f24b79um5651va727rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_WSrC4z-15f0Y6TqMydL5Vnbu2SR0m9c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093912737204-59f5dffr4n418f24b79um5651va727rp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

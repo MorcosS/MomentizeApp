@@ -38,8 +38,10 @@ public class MomentizeAppWidget  extends AppWidgetProvider {
             final Intent activityIntent = new Intent(context, MainApp.class);
             final PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, activityIntent, PendingIntent.FLAG_UPDATE_CURRENT);
             remoteViews.setPendingIntentTemplate(R.id.listViewWidget, pendingIntent);
+            appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetIds[i], R.id.listViewWidget);
             appWidgetManager.updateAppWidget(appWidgetIds[i],
                     remoteViews);
+
         }
 
         super.onUpdate(context, appWidgetManager, appWidgetIds);

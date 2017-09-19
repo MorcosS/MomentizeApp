@@ -6,12 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:layout_marginTop="32dp"
     tools:context="com.dcc.momentizeapp.MainApp.MainApp">
 
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1">
         <!-- TODO: Update blank fragment layout -->
        

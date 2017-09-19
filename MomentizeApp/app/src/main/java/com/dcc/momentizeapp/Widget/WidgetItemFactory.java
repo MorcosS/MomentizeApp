@@ -24,6 +24,8 @@ import com.sdsmdg.tastytoast.TastyToast;
 
 import java.util.ArrayList;
 
+import static com.dcc.momentizeapp.Widget.MomentizeAppWidget.ACTION_DATA_UPDATED;
+
 /**
  * Created by MorcosS on 5/18/17.
  */
@@ -42,7 +44,8 @@ public class WidgetItemFactory implements RemoteViewsService.RemoteViewsFactory 
         this.context = context;
         appWidgetId = intent.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,
                 AppWidgetManager.INVALID_APPWIDGET_ID);
-        populateListItem();
+
+
     }
 
     private void populateListItem() {
@@ -55,6 +58,8 @@ public class WidgetItemFactory implements RemoteViewsService.RemoteViewsFactory 
                             Memory memory = postSnapshot.getValue(Memory.class);
                             memoryArrayList.add(memory);
                         }
+                        Intent dataUpdatedIntent = new Intent(ACTION_DATA_UPDATED);
+                        context.sendBroadcast(dataUpdatedIntent);
                     }
 
                     @Override
@@ -107,16 +112,12 @@ public class WidgetItemFactory implements RemoteViewsService.RemoteViewsFactory 
         return true;
     }
 
-    /*
-    *Similar to getView of Adapter where instead of View
-    *we return RemoteViews
-    *
-    */
+
     @Override
     public RemoteViews getViewAt(int i) {
         RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.widget_item);
         remoteViews.setTextViewText(R.id.title,memoryArrayList.get(i).getMemoryTitle());
-        remoteViews.setTextViewText(R.id.date,memoryArrayList.get(i).getMemoryDate());
+
          remoteViews.setTextViewText(R.id.description,memoryArrayList.get(i).getComments().getComments_1()+"/n" +
                  memoryArrayList.get(i).getComments().getComments_2());
 

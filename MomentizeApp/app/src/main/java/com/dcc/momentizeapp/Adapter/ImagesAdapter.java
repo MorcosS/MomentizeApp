@@ -1,13 +1,16 @@
 package com.dcc.momentizeapp.Adapter;
 
+import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.util.Base64;
@@ -75,18 +78,33 @@ public class ImagesAdapter extends BaseAdapter  {
                 public void onClick(View v) {
                     Log.d(LoginActivity.TAG, "clicked");
                     final CharSequence[] items = {
-                            "Camera", "Gallery"
+                            activity.getString(R.string.camera), activity.getString(R.string.gallery)
                     };
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-                    builder.setTitle("Choose Photo From ..");
+                    builder.setTitle(activity.getString(R.string.add_image_menu));
                     builder.setItems(items, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int item) {
 
-                            if (items[item].equals("Camera")) {
+                            if (items[item].equals(activity.getString(R.string.camera))) {
+                                if (ActivityCompat.checkSelfPermission(activity.getApplicationContext(), Manifest.permission.CAMERA)
+                                        != PackageManager.PERMISSION_GRANTED){
+                                    ActivityCompat.requestPermissions(activity,
+                                            new String[]{Manifest.permission.CAMERA},
+                                            PackageManager.PERMISSION_GRANTED);
+                                }
+
                                 Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                                 activity.startActivityForResult(cameraIntent, CAMERA_PIC_REQUEST);
-                            } else if (items[item].equals("Gallery")) {
+                            } else if (items[item].equals(activity.getString(R.string.gallery))) {
+                                if (ActivityCompat.checkSelfPermission(activity.getApplicationContext(), Manifest.permission.MANAGE_DOCUMENTS)
+                                        != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(activity.getApplicationContext(), Manifest.permission.READ_EXTERNAL_STORAGE)
+                                        != PackageManager.PERMISSION_GRANTED) {
+                                    ActivityCompat.requestPermissions(activity,
+                                            new String[]{Manifest.permission.MANAGE_DOCUMENTS,Manifest.permission.READ_EXTERNAL_STORAGE},
+                                            PackageManager.PERMISSION_GRANTED);
+                                }
+
                                 Intent i = new Intent(
                                         Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 

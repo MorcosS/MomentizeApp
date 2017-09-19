@@ -104,14 +104,16 @@ public class MemoriesFragment extends Fragment {
                 new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        blobId = dataSnapshot.getValue().toString();
-                        if(blobId!=null) {
-                            //Toast.makeText(getActivity(), blobId, Toast.LENGTH_LONG).show();
-                            editor.putString(getString(R.string.blobId), blobId);
-                            editor.commit();
-                            fillInMemoriesList();
-                            if (blobId ==null || blobId.equals(0 + "")) {
-                                TastyToast.makeText(getActivity(),getString(R.string.memoryEmptyState),TastyToast.LENGTH_LONG,TastyToast.CONFUSING).show();
+                        if(dataSnapshot.getValue()!=null) {
+                            blobId = dataSnapshot.getValue().toString();
+                            if (blobId != null) {
+                                //Toast.makeText(getActivity(), blobId, Toast.LENGTH_LONG).show();
+                                editor.putString(getString(R.string.blobId), blobId);
+                                editor.commit();
+                                fillInMemoriesList();
+                                if (blobId == null || blobId.equals(0 + "")) {
+                                    TastyToast.makeText(getActivity(), getString(R.string.memoryEmptyState), TastyToast.LENGTH_LONG, TastyToast.CONFUSING).show();
+                                }
                             }
                         }
                     }

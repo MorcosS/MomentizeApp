@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "451510772799",
+    "firebase_url": "https://scout-finance.firebaseio.com",
+    "project_id": "scout-finance",
+    "storage_bucket": "scout-finance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451510772799:android:b3fe5fe8274c8f0d",
+        "android_client_info": {
+          "package_name": "com.morcos_s.scoutfinance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451510772799-m78k4tsaeobgsi532dlinbbdm20jem6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.morcos_s.scoutfinance",
+            "certificate_hash": "076be54bec59d5e9ffa5cf4bcddc945deb813d4d"
+          }
+        },
+        {
+          "client_id": "451510772799-rpltnbm91o11undl1tr8c4us929pi2p1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8m-A_CgahpIvz7nUZJ9z1SytmQ-eiP7c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451510772799-rpltnbm91o11undl1tr8c4us929pi2p1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

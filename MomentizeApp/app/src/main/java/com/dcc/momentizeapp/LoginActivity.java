@@ -268,7 +268,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                             success = false;
                         }else{
 
-                            TastyToast.makeText(getApplicationContext(),"You have logged in successfully",
+                            TastyToast.makeText(getApplicationContext(),getString(R.string.successful_login),
                                     TastyToast.LENGTH_SHORT,TastyToast.SUCCESS).show();
                             success = true;
                             onSuccess();

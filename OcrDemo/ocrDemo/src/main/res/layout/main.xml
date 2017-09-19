@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:weightSum="1.0" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark" >
+
+        <TextView
+            style="@style/TitleText"
+            android:text="@string/app_name" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageButton
+                 android:id="@+id/btn_pan_zoom"
+                 android:src="@drawable/pan_zoom"
+                 android:contentDescription="@string/pan_zoom"
+                 android:onClick="onViewAction"
+                 style="@style/ToolbarButton"/>
+            <ImageButton
+                 android:id="@+id/btn_deskew_3d"
+                 android:src="@drawable/deskew3d"
+                 android:contentDescription="@string/deskew_3d"
+                 android:onClick="onManual3DDeskew"
+                 style="@style/ToolbarButton"/>
+            <ImageButton
+                 android:id="@+id/btn_actual_size"
+                 android:src="@drawable/actual_size"
+                 android:contentDescription="@string/actual_size"
+                 android:onClick="onViewAction"
+                 style="@style/ToolbarButton"/>
+            <ImageButton
+                 android:id="@+id/btn_fit"
+                 android:src="@drawable/fit"
+                 android:contentDescription="@string/fit"
+                 android:onClick="onViewAction"
+                 style="@style/ToolbarButton"/>
+            <ImageButton
+                 android:id="@+id/btn_zoom_in"
+                 android:src="@drawable/zoom_in"
+                 android:contentDescription="@string/zoom_in"
+                 android:onClick="onViewAction"
+                 style="@style/ToolbarButton"/>
+            <ImageButton
+                 android:id="@+id/btn_zoom_out"
+                 android:src="@drawable/zoom_out"
+                 android:contentDescription="@string/zoom_out"
+                 android:onClick="onViewAction"
+                 style="@style/ToolbarButton"/>
+           <ImageButton
+                 android:id="@+id/btn_invert"
+                 android:src="@drawable/invert"
+                 android:contentDescription="@string/invert"
+                 android:onClick="onImageAction"
+                 style="@style/ToolbarButton"/>
+           <ImageButton
+                 android:id="@+id/btn_rotate_cw"
+                 android:src="@drawable/rotate_cw"
+                 android:contentDescription="@string/rotate_cw"
+                 android:onClick="onImageAction"
+                 style="@style/ToolbarButton"/>
+           <ImageButton
+                 android:id="@+id/btn_rotate_ccw"
+                 android:src="@drawable/rotate_ccw"
+                 android:contentDescription="@string/rotate_ccw"
+                 android:onClick="onImageAction"
+                 style="@style/ToolbarButton"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_background"
+        android:layout_margin="15dp"
+        android:stretchColumns="1" >
+
+       <TableRow
+            android:id="@+id/tr_manual_deskew"
+            android:visibility="gone">
+         <Button
+           android:layout_column="0"
+           android:padding="3dip"
+                 android:text="@string/cancel"
+             android:onClick="onManual3DDeskewCancel"/>
+          <Button android:layout_column="2"
+               android:padding="3dip"
+               android:text="@string/apply"
+              android:onClick="onManual3DDeskewApply"/>
+
+       </TableRow>
+        <TableRow
+                android:id="@+id/tr_image">
+
+            <TextView
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="@string/info_image"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtview_info_image"
+                android:layout_column="2"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="@string/info_no_image_loaded"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/tr_elapse_time">
+                >
+            <TextView
+                android:layout_column="0"
+                android:padding="3dip"
+                android:text="@string/info_ellapsed_time"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_column="2"
+                android:id="@+id/txtview_info_ellapsed_time"
+                android:layout_gravity="left"
+                android:padding="3dip"
+                android:text="@string/info_zero_time"
+                android:textColor="@color/black" />
+        </TableRow>
+    </TableLayout>
+
+    <leadtools.controls.RasterImageViewer
+        android:id="@+id/imageviewer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/btn_image_gallery"
+            android:contentDescription="@string/image_gallery"
+            android:onClick="onSelectImage"
+            android:text="@string/image_gallery"
+            android:drawableTop="@drawable/image_gallery"
+            style="@style/ActionButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_image_browse"
+            android:contentDescription="@string/image_file"
+            android:onClick="onSelectImage"
+            android:text="@string/image_file"
+            android:drawableTop="@drawable/open"
+            style="@style/ActionButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_image_capture"
+            android:contentDescription="@string/image_take_picture"
+            android:onClick="onSelectImage"
+            android:text="@string/image_take_picture"
+            android:drawableTop="@drawable/image_camera"
+            style="@style/ActionButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_select_zone"
+            android:contentDescription="@string/ocr_select_zone"
+            android:onClick="onSelectArea"
+            android:text="@string/ocr_select_zone"
+            android:drawableTop="@drawable/select"
+            style="@style/ActionButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_recognize"
+            android:contentDescription="@string/ocr_recognize_page"
+            android:onClick="onRecognizePage"
+            android:text="@string/ocr_recognize_page"
+            android:drawableTop="@drawable/recognize_text"
+            style="@style/ActionButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_ocr_settings"
+            android:contentDescription="@string/ocr_settings"
+            android:onClick="onOCRSettings"
+            android:text="@string/ocr_settings"
+            android:drawableTop="@drawable/settings"
+            style="@style/ActionButtonStyle" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -9,6 +9,7 @@
         android:id="@+id/imageButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:contentDescription="@string/uploaded_image"/>
 
 </LinearLayout>

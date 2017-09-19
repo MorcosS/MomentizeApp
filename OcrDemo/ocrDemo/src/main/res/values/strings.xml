@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OCR Demo</string>
+    <string name="image_gallery">gallery</string>
+    <string name="image_file">load image</string>
+    <string name="image_take_picture">take picture</string>
+    <string name="ocr_recognize_page">recognize</string>
+    <string name="ocr_select_zone">select area</string>
+    <string name="ocr_settings">settings</string>
+    <string name="ocr_result">Result</string>
+    <string name="ocr_result_format">Format</string>
+    <string name="ocr_recognition_options">Recognition Options</string>
+
+    <string name="settings_language">Language</string>
+    <string name="settings_enable_auto_invert">Auto Invert</string>
+    <string name="settings_detect_graphics">Detect Graphics &amp; Colors</string>
+    <string name="settings_enable_mobile_images">Mobile Images</string>
+    <string name="settings_on">ON</string>
+    <string name="settings_off">OFF</string>
+
+    <string name="pan_zoom">Pan Zoom</string>
+    <string name="deskew_3d">Manual 3D Deskew</string>
+    <string name="actual_size">Actual Size</string>
+    <string name="fit">Fit</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="rotate_cw">Rotate Clockwise</string>
+    <string name="rotate_ccw">Rotate Counter Clockwise</string>
+    <string name="invert">Invert</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="info_image">Image</string>
+    <string name="info_no_image_loaded">No image loaded</string>    
+    <string name="info_ellapsed_time">Elapsed Time</string>
+    <string name="info_zero_time">00:00 (s)</string>
+
+    <string-array name="ocr_result_type">
+        <item>Save as document to storage</item>
+        <item>Display recognition results text</item>
+    </string-array>
+
+    <string-array name="ocr_result_format">
+        <item>PDF</item>
+        <item>PDF Embedded Fonts</item>
+        <item>PDF/A</item>
+        <item>PDF Image Over Text</item>
+        <item>PDF Image Over Text | Embedded Fonts</item>
+        <item>PDF/A Image Over Text</item>
+        <item>DOCX</item>
+        <item>DOCX Framed</item>
+        <item>RTF</item>
+        <item>RTF Framed</item>
+        <item>Text</item>
+        <item>Text Formatted</item>
+        <item>SVG</item>
+    </string-array>
+
+    <string-array name="ocr_operations">
+        <item>Load Image</item>
+        <item>Save Image</item>
+        <item>Process Image</item>
+        <item>Find Zones</item>
+        <item>Recognize - First Pass</item>
+        <item>Recognize - Second Pass</item>
+        <item>Recognize - First Pass</item>
+        <item>Save Document - Prepare</item>
+        <item>Save Document</item>
+        <item>Save Document - Convert Image</item>
+        <item>Formatting</item>
+        <item>Recognize OMR</item>
+    </string-array>
+
+    <string name="ocr_abort">Aborting...</string>
+    <string name="dlg_ocr_settings">OCR Settings</string>
+    <string name="ocr_results_saved_to">Results saved successfully to %s</string>
+    <string name="ocr_results">Recognition Results</string>
+    <string name="err_no_image_loaded">No image loaded</string>
+    <string name="err_copying_shadow_fonts">An error occured while copying the Shadow Fonts to storage.</string>
+</resources>

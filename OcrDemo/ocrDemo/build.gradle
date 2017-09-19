@@ -1,0 +1,29 @@
+
+project.ext.demoId = 'leadtools.ocrdemo'
+project.ext.demoVersionCode = 1510
+project.ext.demoVersionName = '1.5.1'
+
+project.ext.libs = ['libleadtools.so',
+                    'libleadtools.codecs.*',
+                    'libleadtools.imageprocessing.*',
+                    'libleadtools.colorconversion.so',
+                    'libleadtools.drawing.so',
+                    'libleadtools.vector.so',
+                    'libleadtools.svg.so',
+                    'libleadtools.pdf.so',
+                    'libleadtools.forms.documentwriters.so',
+                    'libleadtools.forms.ocr.so']
+
+project.ext.leadtoolsDemosDir = project(':leadtoolsDemos').projectDir.path
+
+apply from: project.ext.leadtoolsDemosDir + '/appsCommon.gradle'
+
+dependencies {
+    compile project(':leadtoolsDemos')
+    compile fileTree(dir: project.ext.javaDirPath,
+            include: ['leadtools.imageprocessing.core.jar',
+                      'leadtools.imageprocessing.color.jar',
+                      'leadtools.imageprocessing.effects.jar',
+                      'leadtools.forms.documentwriters.jar',
+                      'leadtools.forms.ocr.jar'])
+}

@@ -18,13 +18,14 @@
             android:id="@+id/memory_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            card_view:srcCompat="@drawable/ic_favorite_black_24px" />
+            card_view:srcCompat="@drawable/ic_favorite_black_24px"
+            android:contentDescription="@string/memory_image"/>
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Title"
+        android:text="@string/title"
         android:layout_gravity="center"
         android:textSize="20sp"/>
     <TextView
@@ -44,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:lines="2"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:text="@string/add_date_description"/>
 </LinearLayout>

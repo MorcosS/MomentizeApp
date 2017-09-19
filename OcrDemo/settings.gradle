@@ -1,0 +1,4 @@
+include ':leadtoolsDemos'
+include ':ocrDemo'
+
+project(':leadtoolsDemos').projectDir = new File('../LeadtoolsDemos')
